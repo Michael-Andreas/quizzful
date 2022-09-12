@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/quizzful/static/css/main.f788a01f.css",
+    "main.js": "/quizzful/static/js/main.e808c1ec.js",
+    "index.html": "/quizzful/index.html",
+    "main.f788a01f.css.map": "/quizzful/static/css/main.f788a01f.css.map",
+    "main.e808c1ec.js.map": "/quizzful/static/js/main.e808c1ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f788a01f.css",
+    "static/js/main.e808c1ec.js"
+  ]
+}
