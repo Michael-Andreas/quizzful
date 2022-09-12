@@ -1,0 +1,24 @@
+.startpage--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.startpage--container button {
+    font-family: "Poppins", "sans-serif";
+    font-size: 1.1rem;
+    background-color: #4D5B9E;
+    color: white;
+    padding: 1.2em 5em;
+    border-radius: 15px;
+    border: none;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.startpage--container button:hover {
+    background-color: #606eb4;
+}

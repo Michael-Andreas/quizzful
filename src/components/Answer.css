@@ -1,0 +1,11 @@
+span {
+    display: inline-block;
+    font-size: 1rem;
+    border: 2px solid #293264;
+    border-radius: 12px;
+    padding: 0.2em 1em;
+}
+
+span:hover {
+    cursor: pointer;
+}

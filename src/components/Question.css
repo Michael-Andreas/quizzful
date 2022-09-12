@@ -1,0 +1,25 @@
+.question--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+}
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #DBDEF0;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+}

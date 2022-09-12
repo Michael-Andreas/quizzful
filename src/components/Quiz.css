@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 2em;
+    max-width: 1000px;
+    color: #293264;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sub-container p {
+    margin: 1em 0;
+    font-size: 1.7rem;
+    margin-left: 3em;
+}
+
+.sub-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container button {
+    font-family: "Poppins", "sans-serif";
+    font-size: 1.1rem;
+    background-color: #4D5B9E;
+    color: white;
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin: 1em auto;
+    justify-self: center;
+}
+
+.container button:hover {
+    background-color: #606eb4;
+}

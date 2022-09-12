@@ -1,0 +1,44 @@
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+.outer {
+    position: absolute;
+    height: 100%;
+}
+
+.blob1 {
+    position: fixed;
+    border-radius: 27% 73% 67% 33% / 17% 43% 57% 83%;
+    width: 465px;
+    height: 465px;
+    background-color: #DEEBF8;
+    z-index: -1;
+    bottom: -12em;
+    left: -10em;
+    transform: rotate(-10deg);
+}
+
+.blob2 {
+    position: fixed;
+    border-radius: 26% 74% 33% 67% / 28% 43% 57% 72%;
+    width: 465px;
+    height: 465px;
+    background-color: #FFFAD1;
+    z-index: -1;
+    top: -12em;
+    right: -3em;
+}
+
+@media only screen and (max-width: 1400px) {
+    .blob1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .blob2 {
+        width: 300px;
+        height: 300px;
+    }
+}
