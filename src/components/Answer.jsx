@@ -45,7 +45,7 @@ export default function Answer(props) {
           backgroundColor: props.answer.backgroundColor,
           border:
             props.answer.backgroundColor !== "transparent" &&
-            "1px solid #F5F7FB",
+            "2px solid #F5F7FB",
         }}>
         {singleAnswer}
       </span>
