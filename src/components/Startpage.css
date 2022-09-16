@@ -5,6 +5,7 @@
     text-align: center;
     justify-content: center;
     height: 80vh;
+    padding: 0 1em;
 }
 
 .startpage--container button {
