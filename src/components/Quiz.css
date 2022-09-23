@@ -13,12 +13,15 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 .sub-container p {
-    margin: 1em 0;
+    text-align: center;
     font-size: 1.7rem;
-    margin-left: 3em;
+    margin: 0 auto;
 }
 
 .container button {
@@ -31,11 +34,24 @@
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    margin: 1em auto;
-    justify-self: center;
+    margin: 0 auto;
 }
 
 .container button:hover,
 .container button:focus {
     background-color: #606eb4;
+}
+
+@media only screen and (max-width: 800px) {
+    .sub-container {
+        margin-top: 1em;
+    }
+
+    .sub-container p {
+        margin-bottom: 1em;
+    }
+
+    .sub-container button {
+        margin-bottom: 1em;
+    }
 }

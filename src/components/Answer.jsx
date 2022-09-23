@@ -8,11 +8,20 @@ export default function Answer(props) {
       .replace(/&lt;/g, "<")
       .replace(/&gt;/g, ">")
       .replace(/&quot;/g, "'")
-      .replace(/&#039;/g, "'");
+      .replace(/&#039;/g, "'")
+      .replace(/&uuml;/g, "ü")
+      .replace(/&Uuml;/g, "Ü")
+      .replace(/&ouml;/g, "ö")
+      .replace(/&Ouml;/g, "Ö")
+      .replace(/&auml;/g, "a")
+      .replace(/&Auml;/g, "Ü");
   }
   const singleAnswer = escapeHtml(props.answer.answer);
 
   function handleClick() {
+    if (!props.playing) {
+      return;
+    }
     props.setAnswers((prev) =>
       prev.map((answers, index) => {
         if (index === props.index) {
@@ -44,8 +53,9 @@ export default function Answer(props) {
         style={{
           backgroundColor: props.answer.backgroundColor,
           border:
-            props.answer.backgroundColor !== "transparent" &&
-            "2px solid #F5F7FB",
+            props.answer.backgroundColor === "transparent"
+              ? "2px solid #293264"
+              : "2px solid " + props.answer.backgroundColor,
         }}>
         {singleAnswer}
       </span>

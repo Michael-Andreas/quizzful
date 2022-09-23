@@ -13,25 +13,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState([]);
   const [fetching, setFetching] = useState(true);
-  const [windowSize, setWindowSize] = useState(getWindowSize());
   const [confetti, setConfetti] = useState(false);
-
-  function getWindowSize() {
-    const { innerWidth, innerHeight } = window;
-    return { innerWidth, innerHeight };
-  }
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
 
   useEffect(() => {
     async function fetchData() {
@@ -86,12 +68,7 @@ function App() {
   return (
     <div>
       <Background />
-      {confetti && (
-        <Confetti
-          width={windowSize.innerWidth}
-          height={windowSize.innerHeight}
-        />
-      )}
+      {confetti && <Confetti />}
       {!start && <Startpage startApp={startApp} />}
       {start && answers && questions && (
         <Quiz

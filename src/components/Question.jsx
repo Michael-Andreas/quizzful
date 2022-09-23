@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Question.css";
 import Answer from "./Answer";
 import { v4 as uuidv4 } from "uuid";
@@ -10,7 +10,13 @@ export default function Question(props) {
       .replace(/&lt;/g, "<")
       .replace(/&gt;/g, ">")
       .replace(/&quot;/g, "'")
-      .replace(/&#039;/g, "'");
+      .replace(/&#039;/g, "'")
+      .replace(/&uuml;/g, "ü")
+      .replace(/&Uuml;/g, "Ü")
+      .replace(/&ouml;/g, "ö")
+      .replace(/&Ouml;/g, "Ö")
+      .replace(/&auml;/g, "a")
+      .replace(/&Auml;/g, "Ü");
   }
   const question = escapeHtml(props.question);
 
@@ -21,6 +27,7 @@ export default function Question(props) {
         setAnswers={props.setAnswers}
         key={uuidv4()}
         index={props.index}
+        playing={props.playing}
       />
     );
   });

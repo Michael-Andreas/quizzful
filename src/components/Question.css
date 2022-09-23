@@ -23,3 +23,31 @@ hr {
     margin-bottom: 1em;
     margin-top: 0.2em;
 }
+
+@media only screen and (max-width: 800px) {
+    .question--container {
+        gap: 0.55em
+    }
+
+    .answers {
+        gap: 0.5em
+    }
+
+    hr {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1920px) {
+    .question--container {
+        gap: 0.85em
+    }
+
+    .answers {
+        gap: 0.8em
+    }
+
+    hr {
+        margin-bottom: 0.8em;
+    }
+}

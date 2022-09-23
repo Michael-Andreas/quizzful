@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Question from "./Question";
 import "./Quiz.css";
 
@@ -14,6 +14,7 @@ export default function Quiz(props) {
         answers={props.answers[index]}
         setAnswers={props.setAnswers}
         index={index}
+        playing={props.playing}
       />
     );
   });
